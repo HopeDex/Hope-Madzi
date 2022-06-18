@@ -1,12 +1,28 @@
 import React from "react";
 import "./hero.css";
+import "./text.css";
 import { FaArrowRight } from "react-icons/fa";
 const Hero = () => {
   return (
     <div className="hero">
       <p className="inner">&lt;div&gt;</p>
-      <h1 className="hi">HI</h1>
-      <h1 className="ho">I'M HOPE 😎</h1>
+      {/* <h1 className="hi">HI</h1>
+       */}
+      <div class="container">
+        <div class="box">
+          <div class="title">
+            <span class="block"></span>
+            <h1>
+              Hey Stranger <span></span>
+            </h1>
+          </div>
+
+          <div class="role">
+            <div class="block"></div>
+            <h1 className="ho">I'M HOPE 😎</h1>
+          </div>
+        </div>
+      </div>
       <div className="bottom">
         <h4 class="start">
           <span class="end1">&lt;&gt;</span>
@@ -22,6 +38,7 @@ const Hero = () => {
       <p className="inner">&lt;/div&gt;</p>
 
       <svg
+        className="rocket"
         xmlns="http://www.w3.org/2000/svg"
         width="250.206"
         height="254.292"

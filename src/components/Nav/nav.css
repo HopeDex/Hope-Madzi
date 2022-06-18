@@ -29,9 +29,13 @@ nav{
     font-weight: 700;
     list-style: none;
     
-
-
 }
+.nav-menu li:hover{
+    color: orange;
+    cursor: pointer;
+    font-style: oblique;
+}
+
 @keyframes navbar {
     0% {
       transform: translateY(-60px);
