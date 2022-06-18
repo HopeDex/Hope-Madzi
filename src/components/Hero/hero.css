@@ -1,0 +1,169 @@
+.hero{
+    margin: 80px;
+    margin-top: 100px;
+    height: 50%;
+    width: 60%;
+}
+.hero h1{
+    color: rgb(210, 210, 210);
+    margin:0 0 0 50px;
+    font-weight: 400;   
+ 
+}
+.inner{
+    padding-left: 20px;
+}
+.ho{
+    font-size: 100px;
+    opacity: 0;
+    animation: anim-lineUp 2s linear 1.5s 1 normal  forwards;
+}
+.hi{
+    font-size: 60px;
+    opacity: 0;
+    animation: anim-lineUp 2s linear 0.5s 1 normal  forwards;
+}
+.hero h4{
+    opacity: 0;
+    color: white;
+    font-size: 30px;
+    animation: anim-lin 4s linear 0.5s 1 normal  forwards;
+}
+.hero button{
+    background-color: blue;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+    border: none;
+    color: white;
+    display: flex;
+    justify-content:space-around ;
+    gap:10px;
+    align-items:center ;
+}
+.hero button svg{
+  font-size: large;
+}
+.bottom{
+    width: 50%;
+    margin:0 0 0 50px;
+}
+p{
+    color: white;
+    opacity: 0.5;
+    font-family: cursive;
+}
+
+
+  .start{
+    margin: 0;
+  }
+
+  .end1, .middle1, .middle2{
+    display: inline-block;
+    overflow:hidden;
+    height: 1.5em;
+}
+.end2{
+    position:absolute;
+    color:#ff6a00
+}
+.middle1, .middle2{
+    color: #cfcfcf
+}
+.middle1 {
+    animation: ani1 5s infinite;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    max-width: 0;
+}
+.middle2 {
+    animation: ani2 5s infinite;
+    animation-delay: 1s;
+    max-width: 0;
+    animation-duration: 5s;
+}
+/* svg{
+    height: 150px;
+    
+} */
+
+/* ANIMATIONS */
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.75;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @keyframes anim-lin {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+@keyframes ani1 {
+    0% {
+    max-width: 500px;
+  }
+  
+  25% {
+    max-width: 0;
+  }
+  
+  75% {
+    max-width: 0;
+  }
+  
+  90% {
+    max-width: 500px;
+  }
+  
+  100% {
+    max-width: 500px;
+  }
+}
+
+@keyframes ani2 {
+    0% {
+        max-width: 0;
+    }
+
+    25% {
+        max-width: 0;
+    }
+
+    50% {
+        max-width: 500px;
+    }
+
+    75% {
+        max-width: 0;
+    }
+
+    100% {
+        max-width: 0;
+    }
+}
