@@ -1,0 +1,55 @@
+.about{
+    padding-top: 50px;
+    display: flex;
+    height: 600px;
+    width: 100%;
+    margin: auto;
+    justify-content: start;
+}
+.image{
+    width: 30%;
+}
+.glass{
+    margin-left: -12% ;
+    width: 75%;
+    height: inherit;
+    background: rgba(1, 76, 99, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(9.8px);
+}
+.glass h1{
+    color: white;
+    padding: 2% 0 0 2%;
+    margin: 0;
+}
+.glass small{
+    font-size: 18px;
+    padding-left: 2%;
+    color: white;
+}
+.glass small span{
+    color: rgb(88, 88, 254);
+}
+.glass p{
+    color: white;
+    opacity: 1;
+    padding: 0 2% 0 2%;
+    font-size: 18px;
+}
+.soc{
+    bottom: 10%;
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    position: absolute;
+}
+.soc img:hover{
+ cursor: pointer;
+ box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+
+}
