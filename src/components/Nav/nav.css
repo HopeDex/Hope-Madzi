@@ -30,10 +30,22 @@ nav{
     list-style: none;
     
 }
-.nav-menu li:hover{
+.nav-menu li{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.nav-menu li a:hover{
     color: orange;
     cursor: pointer;
     font-style: oblique;
+}
+.nav-menu li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
 }
 
 @keyframes navbar {

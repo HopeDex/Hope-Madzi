@@ -1,0 +1,87 @@
+.skills{
+    width: 100%;
+    height: 90%;
+   display: flex;
+   flex-wrap: wrap;
+}
+.upper{
+    width: 80%;
+    height: 50%;
+    background: rgba(20, 20, 20, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(9.8px);
+    margin: auto;
+}
+.lower{
+    width: 80%;
+    height: 35%;
+    margin: auto;
+    background: rgba(20, 20, 20, 0.24);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(9.8px);
+}
+.tools{
+    display: flex;
+    font-size: 38px;
+    gap: 3%;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+}
+.skills h1{
+    color: orange;
+    text-align: center;
+}
+.skills h5{
+    margin: 0;
+    width: 20%;
+}
+.tools img{
+    height: 50px;
+}
+.slist{
+    list-style: none;
+    display: grid;
+    gap: 7%;
+    color: white;
+    font-size: 20px;
+}
+.slist li{
+    opacity: 0;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 5%;
+    animation: anim-lineUp 2s linear 1.5s 1 normal  forwards;
+}
+.bar{
+    background: black;
+    width: 60%;
+    height: 10px;
+    border-radius: 3px;
+}
+.progress{
+    width: 70%;
+    height: inherit;
+    border-radius: 5px;
+    background-color: blue;
+    animation: progress 5s cubic-bezier(.74, .06, .4, .92) forwards;
+    
+}
+@keyframes progress {
+    0% {
+      width: 0%;
+      left: 0;
+    }
+    50% {
+      width: 100%;
+      left: 0;
+    }
+    100% {
+      left: 100%;
+    }
+  }

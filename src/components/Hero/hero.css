@@ -1,8 +1,14 @@
 .hero{
-    margin: 80px;
-    margin-top: 100px;
-    height: 50%;
+    margin: 5%;
+    margin-top: 7%;
+    height: 80%;
     width: 80%;
+    
+}
+.kkk{
+  height: 55%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .hero h1{
     color: rgb(210, 210, 210);
@@ -30,18 +36,35 @@
     animation: anim-lin 4s linear 0.5s 1 normal  forwards;
 }
 .hero button{
-    background-color: blue;
-    height: 50px;
-    font-size: 18px;
-    border-radius: 20px;
-    width: 200px;
-    border: none;
-    color: white;
-    display: flex;
-    justify-content:center ;
-    gap:10px;
-    align-items:center ;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 30%;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  justify-content: space-evenly;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.442);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  opacity: 0;
+  animation: buttonFade 2s forwards;
+    animation-delay: 3.2s;
+}
+.hero button:hover{
+  
+    background-color: orange;
+    box-shadow: 0px 15px 20px rgba(244, 167, 53, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  
 }
 .hero button svg{
   font-size: large;
@@ -49,6 +72,7 @@
 .bottom{
     width: 50%;
     margin:0 0 0 50px;
+    display: grid;
 }
 p{
     color: white;
@@ -56,7 +80,7 @@ p{
     font-family: cursive;
 }
 .rocket{
-  height: 150px;
+  height: 10%;
 }
 
 
@@ -170,4 +194,12 @@ p{
     100% {
         max-width: 0;
     }
+}
+@keyframes buttonFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

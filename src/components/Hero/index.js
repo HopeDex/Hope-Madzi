@@ -8,32 +8,34 @@ const Hero = () => {
       <p className="inner">&lt;div&gt;</p>
       {/* <h1 className="hi">HI</h1>
        */}
-      <div class="container">
-        <div class="box">
-          <div class="title">
-            <span class="block"></span>
-            <h1>
-              Hey Stranger <span></span>
-            </h1>
-          </div>
+      <div className="kkk">
+        <div class="container">
+          <div class="box">
+            <div class="title">
+              <span class="block"></span>
+              <h1>
+                Hey Stranger <span></span>
+              </h1>
+            </div>
 
-          <div class="role">
-            <div class="block"></div>
-            <h1 className="ho">I'M HOPE 😎</h1>
+            <div class="role">
+              <div class="block"></div>
+              <h1 className="ho">I'M HOPE 😎</h1>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="bottom">
-        <h4 class="start">
-          <span class="end1">&lt;&gt;</span>
-          <span class="middle1">Full Stack Developer</span>
-          <span class="middle2">Data Anaylist</span>
-          <span class="end2">&lt;/&gt;</span>
-        </h4>
-        <button>
-          Hire Me <FaArrowRight />
-        </button>{" "}
-        <br></br>
+        <div className="bottom">
+          <h4 class="start">
+            <span class="end1">&lt;&gt;</span>
+            <span class="middle1">Full Stack Developer</span>
+            <span class="middle2">Data Anaylist</span>
+            <span class="end2">&lt;/&gt;</span>
+          </h4>
+          <button>
+            Hire Me <FaArrowRight />
+          </button>{" "}
+          <br></br>
+        </div>
       </div>
       <p className="inner">&lt;/div&gt;</p>
 
