@@ -2,7 +2,7 @@
     width: 100%;
     height: 50%;
 }
-.container .box {
+ .box {
     width: 80%;
     height:fit-content;
     position: relative;
@@ -41,7 +41,7 @@
     position: relative;
   }
   
-  .container .role {
+   .role {
     width: 100%;
     position: relative;
     align-items: center;
@@ -57,11 +57,11 @@
     display: flex;
   }
 
-  .container .role  h1{
+  .ho{
     animation: secFadeIn 2s forwards;
     animation-delay: 3.2s;
     opacity: 0;
-     font-weight: 600;
+     font-weight: 900;
     font-family: 'Lato';
     color: #ffffff;
     font-size: 100px;
@@ -101,7 +101,7 @@
       opacity: 0;
     }
     100% {
-      opacity: 0.5;
+      opacity: 1;
     }
   } 
   @keyframes secFadeIn {
@@ -109,7 +109,7 @@
       opacity: 0;
     }
     100% {
-      opacity: 0.8;
+      opacity: 1;
     }
   }
 

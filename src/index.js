@@ -6,6 +6,8 @@ import Home from "./components/pages/Home";
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import AboutPage from "./components/pages/About";
 import SkillsPage from "./components/pages/SkillsPage";
+import ProjectPage from "./components/pages/ProjectPage.js";
+import ContactPage from "./components/pages/ContactPage.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -15,6 +17,8 @@ root.render(
           <Route index element={<Home />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="skills" element={<SkillsPage />} />
+          <Route path="projects" element={<ProjectPage />} />
+          <Route path="contact" element={<ContactPage />} />
         </Routes>
       </Router>
     </div>

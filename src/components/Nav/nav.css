@@ -20,6 +20,7 @@ nav{
     animation: navbar 1s linear 0s 1 normal  forwards;
     animation: name duration timing-function delay iteration-count direction fill-mode;
 
+    
 
 }
 .nav-menu{
@@ -28,6 +29,8 @@ nav{
     gap: 30px;
     font-weight: 700;
     list-style: none;
+
+    
     
 }
 .nav-menu li{
@@ -47,6 +50,9 @@ nav{
     color: white;
     text-decoration: none;
 }
+.pnav{
+    display: none;
+}
 
 @keyframes navbar {
     0% {
@@ -63,4 +69,14 @@ nav h1{
 }
 nav svg{
     height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-menu{display:none;}
+     .pnav{
+        display: block;
+     }
+     .nav-container{
+        width: 100%;
+     }
 }

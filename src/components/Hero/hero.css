@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 .hero{
-    margin: 5%;
-    margin-top: 7%;
+    margin: 4%;
     height: 80%;
     width: 80%;
     
@@ -11,13 +11,19 @@
   flex-wrap: wrap;
 }
 .hero h1{
-    color: rgb(210, 210, 210);
+    color: rgb(255, 255, 255);
     margin:0 0 0 50px;
-    font-weight: 400;   
+    font-weight: 900;   
  
 }
 .inner{
     padding-left: 20px;
+    font-family: 'Tangerine', cursive;
+    font-size: 30px;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+    
 }
 .ho{
     font-size: 100px;
@@ -25,22 +31,25 @@
     animation: anim-lineUp 2s linear 1.5s 1 normal  forwards;
 }
 .hi{
+    font-style: italic;
     font-size: 60px;
     opacity: 0;
     animation: anim-lineUp 2s linear 0.5s 1 normal  forwards;
 }
+.hi em{
+  color: #ff6a00;
+}
 .hero h4{
     opacity: 0;
-    color: white;
     font-size: 30px;
     animation: anim-lin 4s linear 0.5s 1 normal  forwards;
 }
-.hero button{
-  width: 30%;
+.btn{
+  width: 200px;
   height: 45px;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-letter-spacing: 2.5px;
+  letter-spacing: 2.5px;
   font-weight: 500;
   color: #000;
   background-color: #fff;
@@ -58,7 +67,8 @@ letter-spacing: 2.5px;
   animation: buttonFade 2s forwards;
     animation-delay: 3.2s;
 }
-.hero button:hover{
+
+.btn:hover{
   
     background-color: orange;
     box-shadow: 0px 15px 20px rgba(244, 167, 53, 0.4);
@@ -66,7 +76,7 @@ letter-spacing: 2.5px;
     transform: translateY(-7px);
   
 }
-.hero button svg{
+.btn svg{
   font-size: large;
 }
 .bottom{
@@ -76,11 +86,12 @@ letter-spacing: 2.5px;
 }
 p{
     color: white;
-    opacity: 0.5;
+    
     font-family: cursive;
 }
 .rocket{
-  height: 10%;
+  height: 15%;
+  margin: auto;
 }
 
 
@@ -112,10 +123,7 @@ p{
     max-width: 0;
     animation-duration: 5s;
 }
-/* svg{
-    height: 150px;
-    
-} */
+
 
 /* ANIMATIONS */
 @keyframes anim-lineUp {
@@ -201,5 +209,33 @@ p{
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero{
+    width: 100%;
+  }
+  .kkk{
+    align-content: center;
+  }
+ 
+  .hi em {
+    font-size: 30px;
+  }
+  .container .role h1{
+    font-size: 40px;
+  }
+  .container .box{
+    width: 100%;
+  }
+  .bottom{
+    width: 100%;
+  }
+  .hero h4{
+    font-size: 20px;
+  }
+  .container .role{
+    height: 50px;
   }
 }

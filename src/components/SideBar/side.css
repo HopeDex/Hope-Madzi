@@ -1,0 +1,65 @@
+#caside{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: beige;
+    display: grid;
+    align-items: center;
+    top: -100%;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.icon{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    background: transparent;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+}
+.swrapper{
+    color:black;
+}
+.slink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 02s ease-in-out;
+    text-decoration: none;
+  
+    cursor: pointer;
+  
+    /* &:hover {
+      color: white !important;
+      transition: 0.2s ease-in-out;
+    } */
+}
+
+.smenu{
+    display: flex;
+    text-align: center;  
+    padding: 0;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+.sroute{
+    border-radius: 50px;
+    background: black;
+    white-space: nowrap;
+    padding: 16px 64px;
+    margin: 30px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none; 
+}

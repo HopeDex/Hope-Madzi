@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import Nav from "../Nav";
-import Skills from "../Skills";
+import Projects from "../Projects";
 import SideBar from "../SideBar";
-
-const SkillsPage = () => {
+const ProjectPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => {
@@ -17,12 +16,12 @@ const SkillsPage = () => {
     }
   };
   return (
-    <div style={{ height: "90%" }}>
+    <div>
       <SideBar isOpen={isOpen} toggleOpen={toggleOpen} />
       <Nav toggleOpen={toggleOpen} />
-      <Skills />
+      <Projects />
     </div>
   );
 };
 
-export default SkillsPage;
+export default ProjectPage;

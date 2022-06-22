@@ -2,9 +2,16 @@ import React from "react";
 import "./hero.css";
 import "./text.css";
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import rocket from "../../images/rocket.svg";
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero">
+      <p className="inner" style={{ padding: "0.1%" }}>
+        &lt;html&gt;
+      </p>
+      <p className="inner">&lt;body&gt;</p>
       <p className="inner">&lt;div&gt;</p>
       {/* <h1 className="hi">HI</h1>
        */}
@@ -13,8 +20,8 @@ const Hero = () => {
           <div class="box">
             <div class="title">
               <span class="block"></span>
-              <h1>
-                Hey Stranger <span></span>
+              <h1 className="hi">
+                <em>Hey Stranger !</em> <span></span>
               </h1>
             </div>
 
@@ -28,18 +35,29 @@ const Hero = () => {
           <h4 class="start">
             <span class="end1">&lt;&gt;</span>
             <span class="middle1">Full Stack Developer</span>
-            <span class="middle2">Data Anaylist</span>
+            <span class="middle2">UI/UX Designer</span>
             <span class="end2">&lt;/&gt;</span>
           </h4>
-          <button>
+          <button
+            className="btn"
+            onClick={() => {
+              {
+                navigate("./contact");
+              }
+            }}
+          >
             Hire Me <FaArrowRight />
           </button>{" "}
           <br></br>
         </div>
       </div>
       <p className="inner">&lt;/div&gt;</p>
-
-      <svg
+      <p className="inner">&lt;/body&gt;</p>
+      <p className="inner" style={{ padding: "0.1%" }}>
+        &lt;html&gt;
+      </p>
+      {/* n */}
+      {/* <svg
         className="rocket"
         xmlns="http://www.w3.org/2000/svg"
         width="250.206"
@@ -150,7 +168,7 @@ const Hero = () => {
             fill="#10003b"
           />
         </g>
-      </svg>
+      </svg> */}
     </div>
   );
 };

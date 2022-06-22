@@ -69,3 +69,8 @@ flex-direction: column;
   transition: color 500ms;
 }
 
+@media screen and (max-width: 768px) {
+  html{
+    height: max-content;
+  }
+}

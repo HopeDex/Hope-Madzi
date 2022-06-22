@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./nav.css";
-const Nav = () => {
+import { FaBars } from "react-icons/fa";
+const Nav = ({ toggleOpen }) => {
   const [bg, setBg] = useState("");
   const change = () => {
     setBg.value = "hp";
@@ -48,6 +49,9 @@ const Nav = () => {
               </label>
             </li>
           </ul>
+          <div className="pnav">
+            <FaBars onClick={toggleOpen} />
+          </div>
         </div>
       </nav>
     </>

@@ -6,7 +6,7 @@
     margin: auto;
     justify-content: start;
 }
-.image{
+.pp{
     width: 30%;
 }
 .glass{
@@ -23,6 +23,9 @@
     color: white;
     padding: 2% 0 0 2%;
     margin: 0;
+}
+.glass em{
+    color: orange;
 }
 .glass small{
     font-size: 18px;
@@ -52,4 +55,21 @@
  cursor: pointer;
  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 
+}
+
+@media screen and (max-width: 768px) {
+    .about{padding: 0;
+    height: max-content;}
+    .glass{
+        width: 100%;
+        margin: auto;
+    }
+    .pp{
+        display: none;
+    }
+    .soc{
+        bottom: 2px;
+        position: relative;
+    }
+   
 }
